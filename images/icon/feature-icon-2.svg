@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76" width="76" height="76">
+	<title>01 home page</title>
+	<defs>
+		<image  width="77" height="77" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAABNCAMAAADU1xmCAAAAAXNSR0IB2cksfwAAAi5QTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////OM2qjQAAALp0Uk5TAAx2uefy78iQJkzp/3hEnQf4pnf6qZ63r8ftKSfku+yiQSqGxgP3mEOjzQpImtgTjuIZg+Mj6zg6YkuLXrxmvyw13PFggvsBKBEatAJ7tVbWki8NzwTafa3AK5O4fqiJctG9T3HzwY2XlurKPdKy3lv2UodqUyW2fDvQF7DZP/ClqhYhyTII5l8zWMUxG0ZNbQ7fLroQqxhHNl03/VBvgXUP0wbuzhTXwuUga6xZsWHd/GSnvpuAlJzLJCh3dQAAA8xJREFUeJztmOk/VFEYxw9ZkhFayJAlGRMNppBtUFoQUxQpQolWNEkiUimVSiktWlRIi6XS/t91znPv3GXmnru486pPvzf3ued5znfuPOc8555zEULIy3uJj68K+fkvDUBKWhZoUK8gBdhyDSysYFlYSKg2mmGFHG0liVi1OkxJ4RxujQwtAvuNkQrZwIrCcaFrARdNj4rB7lhlGIojf2FdPODWJ9CiTNibqIJmJpgotAFwScmUKF/sDFNL24iQBXApqR6gmbGRBjjrJs/Q0GbApXt5hoaCABeum5bB2pnkZossLStbWjk8LRca8sw2Wo1xtHxqLcUSt3s5S01ijuZHL03yB3PcWgvkaCl0GpkNhW6tNjna1m0UVtF2CNyxUwsN7SqWVgkbWSpoi1CkadFuj9Js/2n/Oq3MubLztHKbCtmz3Wl77Fbj3opKES2YXqci5bvQ9kWzjiAhzaSStl9Mq6rmPAcEtBqVNG8x7aDAdYinJdeqyVvdYXHeEgFT3wDrWY3OMW10Pm7CEXxN10E7ilATl350DBvNOmgtsNPBOk5aTmDDqIN2Ep1is386FZ0hK3OrDlpbGzeY7WeLyKVRBw3kqOMniFVPnYLOoQ6OFqCXVoHt80bG7kRCWgjlnSXSBRGtC25qwb6IhLRuH5ly4tVziQT3gt0HsMv9xL6CRDTay9lVV3FsVTuxmq+RfgPw1r6OxDSjShrZfhSAdYN0G4S/dHPQhXZLHcxx27n3HYL+d8BmN3aCUbhL2b+JlHfPWeqN0CkM7GHkRlOr+wCwgA0nIcMDzqeZFsllD6FOsCt4p1baCDn8GB5WEfsRwEYFXq20HgIIhdPCYyj1aqFXI+0JPE4W2GS5NZieLp4GJw/HM7CZehgT+TXRngOgqJTYTHXmiQO00F6wM/jlK4TGwXrtEsHT3lBOzR1v2dAy/hAw1A2Xetff42i11GKamGRCoQamBN8B3rk9PUdzUGmGYibUn8yN0oxmZ7NxhE4Lp8JMTK9JgsHr0UAr05wp8TWAo033vpfWB/awN0wQsOH6CDS7xDipH9NygviEjRkmKaMSMeppswZYu+da2ATo2qkOkqqc//yFS6cu2hghfBUMji7aggBkidZL6+VY83Hom16aL4PqTytEzEtLF22CsPpmmI80uk8fkUmBXU3OGw+cZUJ4k0Yj89qijiaQHff6LtFO1qwfmmn+lGdLwu1W96VFXjCTZyUcDcRhzf2pRb/gFDUnQZumLmsKsko+9YJyR0lVSidhfDGsKTMtp1G/W2PUfCfnFPgnvkSS9BcQNjjQukktqAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+	</style>
+	<g id="features area">
+		<g id="features ">
+			<g id="features ">
+				<filter id="f0">
+					<feFlood flood-color="#ff7c0b" flood-opacity="1" />
+					<feBlend mode="normal" in2="SourceGraphic"/>
+					<feComposite in2="SourceAlpha" operator="in" />
+				</filter>
+				<g id="icon" filter="url(#f0)">
+					<use id="notes" href="#img1" x="-1" y="-1"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
