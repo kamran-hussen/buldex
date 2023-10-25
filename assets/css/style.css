@@ -310,6 +310,72 @@ h4, .h4 {
     color: #1b1a1a !important;
     font-family: "Barlow", sans-serif !important; }
 
+.filter-button-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; }
+  .filter-button-group button {
+    background-color: transparent;
+    border: 0;
+    font-weight: 500;
+    padding: 6px 14px;
+    line-height: 1;
+    transition: all 0.2s; }
+    .filter-button-group button.is-checked {
+      background-color: #ff7c0b;
+      color: #fff; }
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -14px;
+  margin-right: -14px; }
+  .filter-container .filter-item {
+    width: 20%;
+    padding-left: 14px;
+    padding-right: 14px; }
+
+.back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px rgba(160, 160, 160, 0.3);
+  z-index: 1024;
+  transform: translateY(20px);
+  transition: all 200ms linear;
+  opacity: 0;
+  visibility: hidden; }
+  .back-to-top::after {
+    position: absolute;
+    content: "";
+    font-family: "Nioicon";
+    text-align: center;
+    font-size: 20px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    transition: all 200ms linear;
+    align-items: center;
+    justify-content: center; }
+  .back-to-top svg path {
+    fill: none;
+    stroke: #ff7c0b;
+    stroke-width: 4;
+    transition: all 200ms linear; }
+  .back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); }
+    .back-to-top.active::after {
+      color: #ff7c0b; }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -811,7 +877,7 @@ h4, .h4 {
     content: "";
     top: 0;
     left: 0;
-    width: 180px;
+    width: 182px;
     height: 100%;
     background: #fff;
     clip-path: polygon(0 0, 101% 0, 53% 100%, 0% 100%);
@@ -1287,6 +1353,113 @@ h4, .h4 {
     opacity: 1;
     visibility: visible; }
 
+.team-card {
+  text-align: center; }
+  .team-card .icon-list {
+    justify-content: center; }
+  .team-card-img-wrap {
+    position: relative;
+    z-index: 1; }
+    .team-card-img-wrap::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      width: 160px;
+      height: 20px;
+      background-color: #1c1c1c;
+      transform: translateX(-50%); }
+    .team-card-img-wrap::after {
+      position: absolute;
+      content: "";
+      bottom: -54px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+      background-color: #fff2e7;
+      z-index: -1;
+      transition: 0.2s; }
+    .team-card-img-wrap img {
+      width: auto !important;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto; }
+  .team-card-body {
+    position: relative;
+    z-index: 1;
+    padding: 20px 20px 30px 20px; }
+    .team-card-body .title {
+      margin-bottom: 4px; }
+    .team-card-body .meta {
+      display: block;
+      margin-bottom: 20px; }
+    .team-card-body::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #f3f3f3;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%); }
+  .team-card:hover .team-card-img-wrap:after {
+    background-color: #ff7c0b; }
+
+.portfolio-card {
+  position: relative; }
+  .portfolio-card::before, .portfolio-card:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: visible;
+    transition: all 0.4s; }
+  .portfolio-card::before {
+    transform: scale(0.5);
+    height: 5px;
+    background: #ff7c0b;
+    z-index: 1; }
+  .portfolio-card::after {
+    height: 100%;
+    background: rgba(29, 31, 41, 0.5); }
+  .portfolio-card-body {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    background: #ff7c0b;
+    color: #fff;
+    border-radius: 0.375rem;
+    padding: 20px;
+    transition: all 0.4s;
+    opacity: 0;
+    visibility: visible;
+    z-index: 1; }
+    .portfolio-card-body .title {
+      margin-bottom: 4px;
+      color: #fff; }
+    .portfolio-card-body .portfolio-card-icon {
+      position: absolute;
+      bottom: -12px;
+      right: 20px;
+      border: 1px solid transparent; }
+      .portfolio-card-body .portfolio-card-icon:hover {
+        border-color: #fff; }
+  .portfolio-card:hover::before, .portfolio-card:hover::after,
+  .portfolio-card:hover .portfolio-card-body {
+    opacity: 1;
+    visibility: visible; }
+  .portfolio-card:hover::before {
+    transform: scale(1); }
+  .portfolio-card:hover .portfolio-card-body {
+    bottom: 20px; }
+
 .counter-wrap {
   background: #fff;
   padding: 70px 20px 0 0;
@@ -1372,12 +1545,17 @@ h4, .h4 {
   line-height: 1;
   border-top-left-radius: var(--bs-accordion-inner-border-radius);
   border-top-right-radius: var(--bs-accordion-inner-border-radius); }
+  .accordion-style-1 .accordion-button .accordion-icon-btn .icon {
+    transform: rotate(-180deg);
+    transition: 0.3s; }
   .accordion-style-1 .accordion-button.collapsed {
     background-color: transparent;
     color: #1b1a1a; }
     .accordion-style-1 .accordion-button.collapsed .accordion-icon-btn {
       background: #ff7c0b;
       border-bottom-right-radius: 4px; }
+      .accordion-style-1 .accordion-button.collapsed .accordion-icon-btn .icon {
+        transform: rotate(0); }
   .accordion-style-1 .accordion-button::after {
     display: none; }
   .accordion-style-1 .accordion-button:not(.collapsed) {
@@ -1421,6 +1599,19 @@ h4, .h4 {
     height: 100%;
     background: url("../../images/bg/working-bg.png") no-repeat;
     background-size: cover;
+    z-index: -1; }
+
+.team-section.has-bg {
+  position: relative;
+  z-index: 1; }
+  .team-section.has-bg::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/bg/team-bg.png") no-repeat;
     z-index: -1; }
 
 /* Form */
