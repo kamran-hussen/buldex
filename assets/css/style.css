@@ -622,6 +622,8 @@ h4, .h4 {
     line-height: 1.4; }
   .btn-gray {
     color: #1b1a1a !important; }
+  .btn-white {
+    color: #1b1a1a !important; }
   .btn.btn-with-icon-element {
     display: inline-flex;
     align-items: center;
@@ -638,6 +640,9 @@ h4, .h4 {
       .btn.btn-with-icon-element .icon-element:hover {
         background-color: #fff;
         color: #ff7c0b; }
+  .btn-white.btn-with-icon-element .icon-element:hover {
+    background-color: #ff7c0b;
+    color: #fff; }
   .btn-pill {
     border-radius: 50rem; }
   .btn-video {
@@ -705,6 +710,13 @@ h4, .h4 {
   border-color: #1d1f29;
   color: #fff; }
   .btn-dark:hover {
+    color: #fff; }
+
+.btn-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: #fff; }
+  .btn-white:hover {
     color: #fff; }
 
 .btn-gray {
@@ -816,6 +828,9 @@ h4, .h4 {
   .icon-element.dark {
     background-color: #1c1c1c;
     color: #fff; }
+  .icon-element.primary {
+    background-color: #ff7c0b;
+    color: #fff; }
   .icon-element.white-soft {
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff; }
@@ -841,7 +856,7 @@ h4, .h4 {
     content: "";
     top: 0;
     left: 0;
-    width: 880px;
+    width: 866px;
     height: 150px;
     background: #ff7c0b;
     clip-path: polygon(0 0, 90% 0, 70% 100%, 0% 100%); }
@@ -857,6 +872,23 @@ h4, .h4 {
       height: 100%;
       background: url("../../images/shape/header-bg.jpg");
       z-index: -1; }
+  .header-section-2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 16px 0; }
+    .header-section-2.has-shape {
+      z-index: 2; }
+      .header-section-2.has-shape::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        width: 1456px;
+        height: 100px;
+        background: url(../../images/shape/header-bg-2.png);
+        z-index: -1;
+        transform: translateX(-50%); }
 
 .header-top {
   padding-top: 8px;
@@ -921,32 +953,33 @@ h4, .h4 {
     margin-top: 4px; }
 
 .header-logo {
-  position: relative;
-  z-index: 1;
-  flex-shrink: 0;
-  padding: 14px; }
-  .header-logo::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 182px;
-    height: 100%;
-    background: #fff;
-    clip-path: polygon(0 0, 101% 0, 53% 100%, 0% 100%);
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px; }
-  .header-logo::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 127px;
-    top: -97px;
-    right: 19px;
-    box-shadow: 8px 0px 25px -22px rgba(0, 0, 0, 0.2);
-    transform: rotate(52deg);
-    z-index: -1; }
+  flex-shrink: 0; }
+  .header-logo.has-shape {
+    position: relative;
+    z-index: 1;
+    padding: 14px; }
+    .header-logo.has-shape::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 170px;
+      height: 100%;
+      background: #fff;
+      clip-path: polygon(0 0, 101% 0, 53% 100%, 0% 100%);
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px; }
+    .header-logo.has-shape::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 127px;
+      top: -97px;
+      right: 19px;
+      box-shadow: 8px 0px 25px -22px rgba(0, 0, 0, 0.2);
+      transform: rotate(52deg);
+      z-index: -1; }
 
 .header-menu-actions {
   margin-left: 40px; }
@@ -980,17 +1013,17 @@ h4, .h4 {
   .header-section .container {
     max-width: 1470px; } }
 
-@media (min-width: 1400px) {
+@media (max-width: 1440px) {
   .header-top:after {
     width: 1220px; }
   .header-section:before {
     width: 220px;
     clip-path: polygon(0 0, 100% 0, 33% 100%, 0% 100%); }
-  .header-logo::before {
+  .header-logo.has-shape::before {
     top: -100px;
     right: 23px;
     transform: rotate(48deg); }
-  .header-logo::after {
+  .header-logo.has-shape::after {
     width: 160px;
     clip-path: polygon(0 0, 101% 0, 53% 100%, 0% 100%); } }
 
@@ -1014,6 +1047,46 @@ h4, .h4 {
       background-position: top;
       background-size: cover;
       z-index: -1; }
+
+.hero-section-2 {
+  padding-top: 250px;
+  padding-bottom: 200px; }
+  .hero-section-2.has-bg {
+    position: relative;
+    z-index: 1; }
+    .hero-section-2.has-bg::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../../images/bg/hero-img-2.png);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      z-index: -1;
+      clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%); }
+  .hero-section-2 .owl-carousel {
+    position: inherit; }
+  .hero-section-2 .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column; }
+    .hero-section-2 .owl-dots .owl-dot span {
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      margin-top: 7px;
+      margin-bottom: 7px; }
+      .hero-section-2 .owl-dots .owl-dot span::after {
+        top: 3px;
+        left: 3px;
+        width: 8px;
+        height: 8px; }
 
 .hero-badge {
   display: inline-block;
@@ -1090,6 +1163,9 @@ h4, .h4 {
       background-repeat: no-repeat;
       z-index: -1;
       transform: rotate(-0.5deg); }
+
+.hero-content-2-wrap {
+  margin-right: -54px; }
 
 .hero-experience {
   background-color: #ff7c0b;
@@ -1193,6 +1269,27 @@ h4, .h4 {
         font-size: 17px; }
       .feature-card-contact-inner .text {
         font-size: 22px; }
+
+.feature-card-2 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 30px 16px;
+  transition: 0.2s all; }
+  .feature-card-2-icon {
+    margin-bottom: 16px; }
+    .feature-card-2-icon img {
+      height: 60px; }
+  .feature-card-2-title {
+    margin-bottom: 8px;
+    transition: 0.2s all; }
+  .feature-card-2:hover {
+    background-color: #ff7c0b;
+    color: #fff; }
+    .feature-card-2:hover .feature-card-2-title {
+      color: #fff; }
+    .feature-card-2:hover .feature-card-2-icon img {
+      filter: brightness(1000%); }
 
 .about-img-wrap {
   position: relative;
