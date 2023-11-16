@@ -14,11 +14,12 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=100">
     <link rel="stylesheet" href="assets/css/style.css?ver=100">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <link rel="stylesheet" href="assets/css/intro.css?ver=100">
 </head>
 
 <body>
-    <div class="page-wrap">
+    <div class="page-wrap home-page-2">
         <div class="search-popup">
             <span class="search-overlay" data-search-overlay-selector></span>
             <div class="search-popup-inner">
@@ -56,18 +57,18 @@
                                         <ul class="menu-list">
                                             <li class="menu-item"><a href="index.html" class="menu-link">Home Page 01</a></li>
                                             <li class="menu-item"><a href="home-2.html" class="menu-link">Home Page 02</a></li>
-                                            <li class="menu-item"><a href="home-3.html" class="menu-link">Home Page 03</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link">About</a>
+                                    <a href="about.html" class="menu-link">About</a>
                                 </li>
                                 <li class="menu-item has-sub">
-                                    <a href="#" class="menu-link menu-toggle">Services</a>
+                                    <a href="#" class="menu-link menu-toggle">Service</a>
                                     <div class="menu-sub">
                                         <ul class="menu-list">
-                                            <li class="menu-item"><a href="#" class="menu-link">Service</a></li>
+                                            <li class="menu-item"><a href="service.html" class="menu-link">Service</a></li>
+                                            <li class="menu-item"><a href="service-details.html" class="menu-link">Service Details</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -75,16 +76,26 @@
                                     <a href="#" class="menu-link menu-toggle">Pages</a>
                                     <div class="menu-sub">
                                         <ul class="menu-list">
-                                            <li class="menu-item"><a href="about-us.html" class="menu-link">About Us</a></li>
-                                            <li class="menu-item"><a href="#" class="menu-link">Team</a></li>
+                                            <li class="menu-item"><a href="team.html" class="menu-link">Team</a></li>
+                                            <li class="menu-item"><a href="team-details.html" class="menu-link">Team Details</a></li>
+                                            <li class="menu-item"><a href="portfolio.html" class="menu-link">Portfolio</a></li>
+                                            <li class="menu-item"><a href="portfolio-details.html" class="menu-link">Portfolio Details</a></li>
+                                            <li class="menu-item"><a href="pricing.html" class="menu-link">Pricing</a></li>
+                                            <li class="menu-item"><a href="error.html" class="menu-link">404 Error Page</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item has-sub">
+                                    <a href="#" class="menu-link menu-toggle">Blog</a>
+                                    <div class="menu-sub">
+                                        <ul class="menu-list">
+                                            <li class="menu-item"><a href="blog.html" class="menu-link">Blog</a></li>
+                                            <li class="menu-item"><a href="blog-details.html" class="menu-link">Blog Details</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link">Team</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#" class="menu-link">Contact</a>
+                                    <a href="contact.html" class="menu-link">Contact</a>
                                 </li>
                             </ul>
                             <div class="header-menu-actions">
@@ -113,8 +124,8 @@
                     <div class="col-md-6">
                         <div class="hero-content-2-wrap">
                             <div class="owl-carousel owl-theme" data-breakpoints='{
-                            "0": {"items": 1}
-                        }' data-loop="true" data-dot="true">
+                                    "0": {"items": 1}
+                                }' data-loop="true" data-dot="true">
                                 <div class="hero-slide-item">
                                     <div class="hero-feature-wrap mb-5">
                                         <div class="row">
@@ -385,12 +396,994 @@
                 </div>
             </div>
         </section>
+        <section class="service-section section-space has-bg">
+            <div class="container">
+                <div class="section-content-header text-center">
+                    <div class="section-sub-title">
+                        <em class="icon ni ni-chevron-right-circle-fill"></em> our best services <em class="icon ni ni-chevron-left-circle-fill"></em>
+                    </div>
+                    <h1 class="section-title">We Are Quality General Service</h1>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div class="service-card service-card-2">
+                            <div class="service-card-head">
+                                <h4 class="title">
+                                    <a href="#">Building Project Service</a>
+                                </h4>
+                                <div class="service-card-icon">
+                                    <img src="images/icon/service-icon-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="service-card-body">
+                                <p class="text">Industrial engineering this Construction branch bulding this complate</p>
+                                <ul class="list-icon">
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>This man for it for Bulding.</li>
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>Emerjency Solution Anytime</li>
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>Team Support Bulding</li>
+                                </ul>
+                                <a href="#" class="btn btn-sm btn-dark rounded-0"> Read More <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                </a>
+                                <span class="service-card-count">01</span>
+                            </div>
+                            <div class="service-card-footer">
+                                <img src="images/service/a.png" alt="">
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-lg-4">
+                        <div class="service-card service-card-2">
+                            <div class="service-card-head">
+                                <h4 class="title">
+                                    <a href="#">Experienced of Team</a>
+                                </h4>
+                                <div class="service-card-icon">
+                                    <img src="images/icon/service-icon-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="service-card-body">
+                                <p class="text">Industrial engineering this Construction branch building this complete</p>
+                                <ul class="list-icon">
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>This man for it for Building.</li>
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>Emergency Solution Anytime</li>
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>Team Support Building</li>
+                                </ul>
+                                <a href="#" class="btn btn-sm btn-dark rounded-0"> Read More <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                </a>
+                                <span class="service-card-count">02</span>
+                            </div>
+                            <div class="service-card-footer">
+                                <img src="images/service/b.png" alt="">
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-lg-4">
+                        <div class="service-card service-card-2">
+                            <div class="service-card-head">
+                                <h4 class="title">
+                                    <a href="#">Calculations Service</a>
+                                </h4>
+                                <div class="service-card-icon">
+                                    <img src="images/icon/service-icon-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="service-card-body">
+                                <p class="text">Industrial engineering this Construction branch building this complete</p>
+                                <ul class="list-icon">
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>This man for it for Building.</li>
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>Emergency Solution Anytime</li>
+                                    <li><em class="icon ni ni-check-circle-fill text-primary"></em>Team Support Building</li>
+                                </ul>
+                                <a href="#" class="btn btn-sm btn-dark rounded-0"> Read More <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                </a>
+                                <span class="service-card-count">03</span>
+                            </div>
+                            <div class="service-card-footer">
+                                <img src="images/service/c.png" alt="">
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+                <div class="service-note-wrap pt-5">
+                    <div class="row justify-content-between align-items-center ">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="service-note">
+                                <p>
+                                    <span>SERVICE:</span> This Service Developing Our People for Growing Our Bulding Work
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 text-end">
+                            <ul class="button-group">
+                                <li>
+                                    <a href="#" class="btn btn-primary btn-pill btn-with-icon-element"> View All Service <span class="icon-element circle">
+                                            <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .service-note-wrap -->
+            </div>
+        </section>
+        <section class="contact-section section-space-bottom">
+            <div class="container">
+                <div class="contact-content-wrap">
+                    <div class="contact-img-area">
+                        <div class="contact-img">
+                            <img src="images/thumb/contact.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="brand-row">
+                            <div class="brand-col">
+                                <div class="brand-wrap">
+                                    <img src="images/brand/brand.png" alt="">
+                                </div>
+                            </div><!-- .col -->
+                            <div class="brand-col">
+                                <div class="brand-wrap">
+                                    <img src="images/brand/brand.png" alt="">
+                                </div>
+                            </div><!-- .col -->
+                            <div class="brand-col">
+                                <div class="brand-wrap">
+                                    <img src="images/brand/brand.png" alt="">
+                                </div>
+                            </div><!-- .col -->
+                        </div>
+                    </div>
+                    <div class="contact-form-wrap">
+                        <div class="section-content-header text-center sm">
+                            <div class="section-sub-title text-light">
+                                <em class="icon ni ni-chevron-right-circle-fill"></em> our contact <em class="icon ni ni-chevron-left-circle-fill"></em>
+                            </div>
+                            <h1 class="section-title text-light">Get in Touch</h1>
+                        </div>
+                        <form action="#" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" class="form-control form-control-s1">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Email" class="form-control form-control-s1">
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <div class="form-choice-wrap form-control-s1">
+                                    <select class="form-choice">
+                                        <option value="subjects-1">Subjects</option>
+                                        <option value="subjects-2">Subjects 2</option>
+                                        <option value="subjects-3">Subjects 3</option>
+                                        <option value="subjects-4">Subjects 4</option>
+                                    </select>
+                                </div>
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <div class="form-choice-wrap form-control-s1">
+                                    <select class="form-choice">
+                                        <option value="working-place-1">Working Place</option>
+                                        <option value="working-place-2">Working Place 2</option>
+                                        <option value="working-place-3">Working Place 3</option>
+                                        <option value="working-place-4">Working Place 4</option>
+                                    </select>
+                                </div>
+                            </div><!-- .form-group -->
+                            <div class="form-group">
+                                <textarea class="form-control form-control-s1" placeholder="Enter your message"></textarea>
+                            </div><!-- .form-group -->
+                            <div class="form-group mt-5">
+                                <button type="submit" class="btn btn-primary btn-block rounded-0"> Request send <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                </button>
+                            </div><!-- .form-group -->
+                        </form>
+                    </div>
+                </div><!-- .contact-content-wrap -->
+            </div>
+        </section>
+        <section class="portfolio-section section-space-bottom">
+            <div class="container">
+                <div class="section-content-header">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6">
+                            <div class="section-content">
+                                <div class="section-sub-title">
+                                    <em class="icon ni ni-chevron-right-circle-fill"></em> our best projects
+                                </div>
+                                <h1 class="section-title">Our Work Recent Projects</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="portfolio-content">
+                                <div class="section-content pb-4">
+                                    <p class="section-text"> Our approach has been simple. Provide 100% competitive price sing qualified Building with no hidden fees ked by </p>
+                                </div>
+                                <div data-filters class="filter-button-group">
+                                    <button class="is-checked" data-filter="*">All</button>
+                                    <button data-filter=".building">Building</button>
+                                    <button data-filter=".client-satisfied">Client Satisfied</button>
+                                    <button data-filter=".support, .building">Support</button>
+                                    <button data-filter=".client-satisfied, .architecture">Architecture</button>
+                                </div><!-- .filter-button-group -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-wrap">
+                <div class="container">
+                    <div class="filter-container column-3" data-filter-container>
+                        <div class="filter-item building" data-category="building" data-filter-item>
+                            <div class="portfolio-card portfolio-card-2">
+                                <div class="portfolio-card-img-wrap">
+                                    <img src="images/portfolio/a.jpg" alt="">
+                                </div>
+                                <div class="portfolio-card-body">
+                                    <h4 class="title">Basic And construction</h4>
+                                    <div class="text">Building Factory</div>
+                                    <a href="#" class="icon-element circle medium portfolio-card-icon">
+                                        <em class="icon ni ni-arrow-long-up"></em>
+                                    </a>
+                                </div>
+                            </div><!-- .portfolio-card -->
+                        </div><!-- .filter-item -->
+                        <div class="filter-item client-satisfied" data-category="client-satisfied" data-filter-item>
+                            <div class="portfolio-card portfolio-card-2">
+                                <div class="portfolio-card-img-wrap">
+                                    <img src="images/portfolio/b.jpg" alt="">
+                                </div>
+                                <div class="portfolio-card-body">
+                                    <h4 class="title">Oil & Gas Productions</h4>
+                                    <div class="text">Building Factory</div>
+                                    <a href="#" class="icon-element circle medium portfolio-card-icon">
+                                        <em class="icon ni ni-arrow-long-up"></em>
+                                    </a>
+                                </div>
+                            </div><!-- .portfolio-card -->
+                        </div><!-- .filter-item -->
+                        <div class="filter-item support building" data-category="support" data-filter-item>
+                            <div class="portfolio-card portfolio-card-2">
+                                <div class="portfolio-card-img-wrap">
+                                    <img src="images/portfolio/c.jpg" alt="">
+                                </div>
+                                <div class="portfolio-card-body">
+                                    <h4 class="title">Bridge Construction</h4>
+                                    <div class="text">Building Factory</div>
+                                    <a href="#" class="icon-element circle medium portfolio-card-icon">
+                                        <em class="icon ni ni-arrow-long-up"></em>
+                                    </a>
+                                </div>
+                            </div><!-- .portfolio-card -->
+                        </div><!-- .filter-item -->
+                        <div class="filter-item client-satisfied architecture" data-category="architecture" data-filter-item>
+                            <div class="portfolio-card portfolio-card-2">
+                                <div class="portfolio-card-img-wrap">
+                                    <img src="images/portfolio/d.jpg" alt="">
+                                </div>
+                                <div class="portfolio-card-body">
+                                    <h4 class="title">Welding Processing</h4>
+                                    <div class="text">Building Factory</div>
+                                    <a href="#" class="icon-element circle medium portfolio-card-icon">
+                                        <em class="icon ni ni-arrow-long-up"></em>
+                                    </a>
+                                </div>
+                            </div><!-- .portfolio-card -->
+                        </div><!-- .filter-item -->
+                        <div class="filter-item building architecture" data-category="building" data-filter-item>
+                            <div class="portfolio-card portfolio-card-2">
+                                <div class="portfolio-card-img-wrap">
+                                    <img src="images/portfolio/e.jpg" alt="">
+                                </div>
+                                <div class="portfolio-card-body">
+                                    <h4 class="title">Civil Engineering</h4>
+                                    <div class="text">Building Factory</div>
+                                    <a href="#" class="icon-element circle medium portfolio-card-icon">
+                                        <em class="icon ni ni-arrow-long-up"></em>
+                                    </a>
+                                </div>
+                            </div><!-- .portfolio-card -->
+                        </div><!-- .filter-item -->
+                        <div class="filter-item building architecture" data-category="building" data-filter-item>
+                            <div class="portfolio-card portfolio-card-2">
+                                <div class="portfolio-card-img-wrap">
+                                    <img src="images/portfolio/a.jpg" alt="">
+                                </div>
+                                <div class="portfolio-card-body">
+                                    <h4 class="title">Civil Engineering</h4>
+                                    <div class="text">Building Factory</div>
+                                    <a href="#" class="icon-element circle medium portfolio-card-icon">
+                                        <em class="icon ni ni-arrow-long-up"></em>
+                                    </a>
+                                </div>
+                            </div><!-- .portfolio-card -->
+                        </div><!-- .filter-item -->
+                    </div><!-- .filter-container -->
+                </div>
+            </div>
+        </section>
+        <section class="watch-video-section has-bg">
+            <div class="container position-relative">
+                <span class="transparent-text">watch</span>
+                <span class="transparent-text right-align">video</span>
+                <div class="video-btn-area has-shape">
+                    <div class="pulse-anim">
+                        <a class="icon-element medium circle" data-fslightbox="gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            <em class="icon ni ni-play-fill"></em>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-content watch-video-content text-center is-dark">
+                    <h1 class="section-title">Great Experience for This Video</h1>
+                    <p class="section-text"> Our approach has been simple. Provide 100% competitive price sing qualified plumbers with no hidden fees ked by </p>
+                    <div class="watch-video-content-btn">
+                        <a href="#" class="btn btn-primary btn-pill btn-with-icon-element"> Video More <span class="icon-element circle">
+                                <em class="icon ni ni-chevron-right-circle-fill"></em>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section section-space">
+            <div class="container">
+                <div class="section-content-header text-center">
+                    <div class="section-sub-title">
+                        <em class="icon ni ni-chevron-right-circle-fill"></em> our team member <em class="icon ni ni-chevron-left-circle-fill"></em>
+                    </div>
+                    <h1 class="section-title">Our Dedicated Team Meeting</h1>
+                </div>
+                <div class="team-slider-wrap">
+                    <div class="owl-carousel owl-theme" data-breakpoints='{
+                            "0": {"items": 1},
+                            "600": {"items": 3},
+                            "1000": {"items": 4}
+                         }' data-loop="true" data-dot="true">
+                        <div class="team-card-2">
+                            <div class="team-card-img-wrap">
+                                <img src="images/team/f.jpg" alt="">
+                                <ul class="icon-list">
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-facebook-f"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-twitter"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-pinterest"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-linkedin"></em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card-body">
+                                <h4 class="title">Rebar Butae</h4>
+                                <span class="meta">Manager</span>
+                                <ul class="list-icon">
+                                    <li>
+                                        <em class="icon ni ni-mail-fill"></em> rebar@2h.com
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-call-fill"></em> +251058954
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-map-pin-fill"></em> 13/A, Miranda Halim City.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .team-card-2 -->
+                        <div class="team-card-2">
+                            <div class="team-card-img-wrap">
+                                <img src="images/team/g.jpg" alt="">
+                                <ul class="icon-list">
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-facebook-f"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-twitter"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-pinterest"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-linkedin"></em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card-body">
+                                <h4 class="title">Kevin Martin</h4>
+                                <span class="meta">Director</span>
+                                <ul class="list-icon">
+                                    <li>
+                                        <em class="icon ni ni-mail-fill"></em> kevin@2h.com
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-call-fill"></em> +251058954
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-map-pin-fill"></em> 13/A, Miranda Halim City.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .team-card-2 -->
+                        <div class="team-card-2">
+                            <div class="team-card-img-wrap">
+                                <img src="images/team/h.jpg" alt="">
+                                <ul class="icon-list">
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-facebook-f"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-twitter"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-pinterest"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-linkedin"></em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card-body">
+                                <h4 class="title">Jason Roy</h4>
+                                <span class="meta">Engineer</span>
+                                <ul class="list-icon">
+                                    <li>
+                                        <em class="icon ni ni-mail-fill"></em> jason@2h.com
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-call-fill"></em> +251058954
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-map-pin-fill"></em> 13/A, Miranda Halim City.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .team-card-2 -->
+                        <div class="team-card-2">
+                            <div class="team-card-img-wrap">
+                                <img src="images/team/f.jpg" alt="">
+                                <ul class="icon-list">
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-facebook-f"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-twitter"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-pinterest"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-linkedin"></em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card-body">
+                                <h4 class="title">Kevin Martin</h4>
+                                <span class="meta">Director</span>
+                                <ul class="list-icon">
+                                    <li>
+                                        <em class="icon ni ni-mail-fill"></em> kevin@2h.com
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-call-fill"></em> +251058954
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-map-pin-fill"></em> 13/A, Miranda Halim City.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .team-card-2 -->
+                        <div class="team-card-2">
+                            <div class="team-card-img-wrap">
+                                <img src="images/team/h.jpg" alt="">
+                                <ul class="icon-list">
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-facebook-f"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-twitter"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-pinterest"></em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-element circle">
+                                            <em class="icon ni ni-linkedin"></em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card-body">
+                                <h4 class="title">Kevin Martin</h4>
+                                <span class="meta">Director</span>
+                                <ul class="list-icon">
+                                    <li>
+                                        <em class="icon ni ni-mail-fill"></em> kevin@2h.com
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-call-fill"></em> +251058954
+                                    </li>
+                                    <li>
+                                        <em class="icon ni ni-map-pin-fill"></em> 13/A, Miranda Halim City.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .team-card-2 -->
+                    </div><!-- .owl-carousel -->
+                </div>
+            </div>
+        </section>
+        <section class="working-section-2 section-space has-bg">
+            <div class="container">
+                <div class="section-content-header text-center">
+                    <div class="section-sub-title">
+                        <em class="icon ni ni-chevron-right-circle-fill"></em> our working progress <em class="icon ni ni-chevron-left-circle-fill"></em>
+                    </div>
+                    <h1 class="section-title">High Quality Easy Work Steps</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="working-card working-card-2">
+                            <div class="working-card-inner">
+                                <span class="working-card-bg"></span>
+                                <span class="working-card-value">01</span>
+                                <div class="working-card-icon">
+                                    <img src="images/working/icon-1.png" alt="">
+                                </div>
+                                <div class="working-card-content">
+                                    <h4 class="title">Commercial of Residential</h4>
+                                    <p class="text"> Industrial engineering thisLorem Ipsum is printing and typesetting industry lorem Ipsum has been industry's standard dummy text ever since . branch complate </p>
+                                    <div class="working-card-btn-wrap">
+                                        <a href="#" class="btn btn-sm btn-gray rounded-0"> Read more <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .working-card -->
+                    </div><!-- .col -->
+                    <div class="col-lg-4">
+                        <div class="working-card working-card-2">
+                            <div class="working-card-inner">
+                                <span class="working-card-bg"></span>
+                                <span class="working-card-value">02</span>
+                                <div class="working-card-icon">
+                                    <img src="images/working/icon-2.png" alt="">
+                                </div>
+                                <div class="working-card-content">
+                                    <h4 class="title">Consultancy Work Now</h4>
+                                    <p class="text"> Industrial engineering thisLorem Ipsum is printing and typesetting industry lorem Ipsum has been industry's standard dummy text ever since . branch complate </p>
+                                    <div class="working-card-btn-wrap">
+                                        <a href="#" class="btn btn-sm btn-gray rounded-0"> Read more <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                        </a>
+                                        <div class="pulse-anim gray">
+                                            <a class="icon-element primary circle" data-fslightbox="gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                                                <em class="icon ni ni-play-fill"></em>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .working-card -->
+                    </div><!-- .col -->
+                    <div class="col-lg-4">
+                        <div class="working-card working-card-2">
+                            <div class="working-card-inner">
+                                <span class="working-card-bg"></span>
+                                <span class="working-card-value">03</span>
+                                <div class="working-card-icon">
+                                    <img src="images/working/icon-3.png" alt="">
+                                </div>
+                                <div class="working-card-content">
+                                    <h4 class="title">Project Design Planing</h4>
+                                    <p class="text"> Industrial engineering thisLorem Ipsum is printing and typesetting industry lorem Ipsum has been industry's standard dummy text ever since . branch complate </p>
+                                    <div class="working-card-btn-wrap">
+                                        <a href="#" class="btn btn-sm btn-gray rounded-0"> Read more <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .working-card -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+                <div class="working-section-footer text-center pt-5">
+                    <a href="#" class="btn btn-primary btn-pill btn-with-icon-element"> View All Working <span class="icon-element circle">
+                            <em class="icon ni ni-chevron-right-circle-fill"></em>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="shop-section section-space-bottom">
+            <div class="container">
+                <div class="section-content-header">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6">
+                            <div class="section-content">
+                                <div class="section-sub-title">
+                                    <em class="icon ni ni-chevron-right-circle-fill"></em> our shop now
+                                </div>
+                                <h1 class="section-title">Our Work Shop Wrench</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="shop-content">
+                                <div class="section-content">
+                                    <p class="section-text"> Our approach has been simple. Provide 100% competitive price sing qualified Bukding with no hidden fees ked by We have a long and proud his tory givin emphasis Industrial engineering. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-5">
+                <div class="shop-slider-wrap">
+                    <div class="owl-carousel owl-theme" data-breakpoints='{
+                            "0": {"items": 1},
+                            "600": {"items": 3},
+                            "1000": {"items": 4}
+                         }' data-loop="true" data-dot="true">
+                        <div class="shop-card">
+                            <div class="shop-card-img-area">
+                                <a href="#" class="cart-icon-wrap">
+                                    <span class="count-badge">2</span>
+                                    <em class="icon ni ni-cart-fill"></em>
+                                </a>
+                                <img src="images/product/a.png" alt="">
+                                <span class="ribbon sale">Sale!</span>
+                                <span class="ribbon new">New!</span>
+                            </div>
+                            <div class="shop-card-content">
+                                <div class="left-content">
+                                    <h4 class="title">Helmet</h4>
+                                    <div class="price">
+                                        <del>$53.00</del>
+                                        <span>- $42.00</span>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <button type="button" class="btn btn-gray add-to-cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div><!-- .shop-card -->
+                        <div class="shop-card">
+                            <div class="shop-card-img-area">
+                                <a href="#" class="cart-icon-wrap">
+                                    <span class="count-badge">0</span>
+                                    <em class="icon ni ni-cart-fill"></em>
+                                </a>
+                                <img src="images/product/b.png" alt="">
+                            </div>
+                            <div class="shop-card-content">
+                                <div class="left-content">
+                                    <h4 class="title">Zapato</h4>
+                                    <div class="price">
+                                        <del>$63.00</del>
+                                        <span>- $37.00</span>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <button type="button" class="btn btn-gray add-to-cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div><!-- .shop-card -->
+                        <div class="shop-card">
+                            <div class="shop-card-img-area">
+                                <a href="#" class="cart-icon-wrap">
+                                    <span class="count-badge">2</span>
+                                    <em class="icon ni ni-cart-fill"></em>
+                                </a>
+                                <img src="images/product/c.png" alt="">
+                                <span class="ribbon sale">Sale!</span>
+                                <span class="ribbon new">New!</span>
+                            </div>
+                            <div class="shop-card-content">
+                                <div class="left-content">
+                                    <h4 class="title">Drillmesin</h4>
+                                    <div class="price">
+                                        <del>$70.00</del>
+                                        <span>- $57.00</span>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <button type="button" class="btn btn-gray add-to-cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div><!-- .shop-card -->
+                        <div class="shop-card">
+                            <div class="shop-card-img-area">
+                                <a href="#" class="cart-icon-wrap">
+                                    <span class="count-badge">0</span>
+                                    <em class="icon ni ni-cart-fill"></em>
+                                </a>
+                                <img src="images/product/d.png" alt="">
+                            </div>
+                            <div class="shop-card-content">
+                                <div class="left-content">
+                                    <h4 class="title">Wrench</h4>
+                                    <div class="price">
+                                        <del>$90.00</del>
+                                        <span>- $67.00</span>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <button type="button" class="btn btn-gray add-to-cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div><!-- .shop-card -->
+                        <div class="shop-card">
+                            <div class="shop-card-img-area">
+                                <a href="#" class="cart-icon-wrap">
+                                    <span class="count-badge">0</span>
+                                    <em class="icon ni ni-cart-fill"></em>
+                                </a>
+                                <img src="images/product/a.png" alt="">
+                            </div>
+                            <div class="shop-card-content">
+                                <div class="left-content">
+                                    <h4 class="title">Helmet</h4>
+                                    <div class="price">
+                                        <del>$90.00</del>
+                                        <span>- $67.00</span>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <button type="button" class="btn btn-gray add-to-cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div><!-- .shop-card -->
+                    </div><!-- .owl-carousel -->
+                </div>
+            </div><!-- .container-fluid -->
+        </section>
+        <section class="cta-section section-space-bottom is-dark">
+            <div class="cta-wrap">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="cta-content">
+                            <div class="media">
+                                <div class="media-head">
+                                    <span class="icon-element large circle">
+                                        <em class="icon ni ni-call"></em>
+                                    </span>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="title">Call Number</h4>
+                                    <div class="text">+550000015854</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-md-4">
+                        <div class="cta-content">
+                            <div class="media">
+                                <div class="media-head">
+                                    <span class="icon-element large circle">
+                                        <em class="icon ni ni-mail-fill"></em>
+                                    </span>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="title">Email Us</h4>
+                                    <div class="text">laronta@bara.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-md-4">
+                        <div class="cta-content">
+                            <div class="media">
+                                <div class="media-head">
+                                    <span class="icon-element large circle">
+                                        <em class="icon ni ni-map-pin-fill"></em>
+                                    </span>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="title">Address</h4>
+                                    <div class="text">Dhaka 1,Betar 33</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div>
+        </section>
+        <section class="blog-section section-space-bottom">
+            <div class="container">
+                <div class="section-content-header text-center">
+                    <div class="section-sub-title">
+                        <em class="icon ni ni-chevron-right-circle-fill"></em> our latest blog <em class="icon ni ni-chevron-left-circle-fill"></em>
+                    </div>
+                    <h1 class="section-title">We Going Largest Our Blog</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-card blog-card-2">
+                            <div class="blog-card-inner">
+                                <div class="blog-card-head">
+                                    <div class="blog-card-head-inner">
+                                        <a href="#" class="blog-card-cat">Engineer</a>
+                                        <img src="images/blog/a.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta-wrap">
+                                        <div class="blog-card-meta"> By: Admin, Agu 02, 2023 </div>
+                                        <div class="blog-card-comment"> Comments (2) </div>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="#">Work in the Vulnerable Building Commercial of blog</a>
+                                    </h4>
+                                    <p class="text"> We poor standard chunk ofI nibh velit auctor aliquet sollic tudin. </p>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <div class="rating-wrap sm">
+                                        <ul class="rating sm">
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                        </ul>
+                                        <span class="rating-value">(04)</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-gray rounded-0"> Read more <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- .blog-card -->
+                    </div><!-- .col -->
+                    <div class="col-lg-4">
+                        <div class="blog-card blog-card-2">
+                            <div class="blog-card-inner">
+                                <div class="blog-card-head">
+                                    <div class="blog-card-head-inner">
+                                        <a href="#" class="blog-card-cat">Engineer</a>
+                                        <img src="images/blog/b.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta-wrap">
+                                        <div class="blog-card-meta"> By: Admin, Agu 02, 2023 </div>
+                                        <div class="blog-card-comment"> Comments (2) </div>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="#">Work in the Vulnerable Building Commercial of blog</a>
+                                    </h4>
+                                    <p class="text"> We poor standard chunk ofI nibh velit auctor aliquet sollic tudin. </p>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <div class="rating-wrap sm">
+                                        <ul class="rating sm">
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                        </ul>
+                                        <span class="rating-value">(04)</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-gray rounded-0"> Read more <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- .blog-card -->
+                    </div><!-- .col -->
+                    <div class="col-lg-4">
+                        <div class="blog-card blog-card-2">
+                            <div class="blog-card-inner">
+                                <div class="blog-card-head">
+                                    <div class="blog-card-head-inner">
+                                        <a href="#" class="blog-card-cat">Engineer</a>
+                                        <img src="images/blog/c.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta-wrap">
+                                        <div class="blog-card-meta"> By: Admin, Agu 02, 2023 </div>
+                                        <div class="blog-card-comment"> Comments (2) </div>
+                                    </div>
+                                    <h4 class="title">
+                                        <a href="#">Work in the Vulnerable Building Commercial of blog</a>
+                                    </h4>
+                                    <p class="text"> We poor standard chunk ofI nibh velit auctor aliquet sollic tudin. </p>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <div class="rating-wrap sm">
+                                        <ul class="rating sm">
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label checked">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                            <li class="rating-label">
+                                                <em class="icon ni ni-star-fill"></em>
+                                            </li>
+                                        </ul>
+                                        <span class="rating-value">(04)</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-gray rounded-0"> Read more <em class="icon ni ni-chevron-right-circle-fill"></em>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- .blog-card -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+                <div class="blog-section-footer text-center pt-5">
+                    <a href="#" class="btn btn-primary btn-pill btn-with-icon-element"> View All Blog <span class="icon-element circle">
+                            <em class="icon ni ni-chevron-right-circle-fill"></em>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
         <footer class="footer-section has-bg">
             <div class="footer-shape"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="footer-info">
+                        <div class="footer-info footer-info-2">
                             <div class="footer-logo">
                                 <a href="index.html">
                                     <img src="images/logo-white.png" alt="">
@@ -432,7 +1425,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="footer-item footer-item-white">
+                        <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Service</h4>
                             <ul class="list-item list-item-white">
                                 <li><a href="#">Why choose us</a></li>
@@ -444,7 +1437,7 @@
                         </div>
                     </div><!-- .col -->
                     <div class="col-md-3">
-                        <div class="footer-item footer-item-white">
+                        <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Quick Link</h4>
                             <ul class="list-item list-item-white">
                                 <li><a href="#">Residents</a></li>
@@ -456,7 +1449,7 @@
                         </div>
                     </div><!-- .col -->
                     <div class="col-md-3">
-                        <div class="footer-item footer-item-white">
+                        <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Recent Posts</h4>
                             <div class="post-media-wrap">
                                 <div class="post-media post-media-white">
