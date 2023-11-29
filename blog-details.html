@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
     <div class="page-wrap">
         <div class="search-popup">
             <span class="search-overlay" data-search-overlay-selector></span>
@@ -96,7 +99,10 @@
                                 <img class="logo-img" src="images/logo.png" alt="logo">
                             </a>
                         </div><!-- .header-logo -->
-                        <nav class="header-menu">
+                        <nav class="header-menu" data-header-menu>
+                            <div class="header-menu-close" data-header-menu-close>
+                                <em class="icon ni ni-cross"></em>
+                            </div>
                             <ul class="menu-list">
                                 <li class="menu-item has-sub">
                                     <a href="#" class="menu-link menu-toggle">Home</a>
@@ -106,9 +112,6 @@
                                             <li class="menu-item"><a href="home-2.html" class="menu-link">Home Page 02</a></li>
                                         </ul>
                                     </div>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="about.html" class="menu-link">About</a>
                                 </li>
                                 <li class="menu-item has-sub">
                                     <a href="#" class="menu-link menu-toggle">Service</a>
@@ -123,6 +126,7 @@
                                     <a href="#" class="menu-link menu-toggle">Pages</a>
                                     <div class="menu-sub">
                                         <ul class="menu-list">
+                                            <li class="menu-item"><a href="about.html" class="menu-link">About</a></li>
                                             <li class="menu-item"><a href="team.html" class="menu-link">Team</a></li>
                                             <li class="menu-item"><a href="team-details.html" class="menu-link">Team Details</a></li>
                                             <li class="menu-item"><a href="portfolio.html" class="menu-link">Portfolio</a></li>
@@ -161,6 +165,10 @@
                                 </ul>
                             </div>
                         </nav><!-- .header-menu -->
+                        <div class="header-menu-bar" data-header-menu-bar>
+                            <em class="icon ni ni-menu"></em>
+                        </div>
+                        <div class="header-overlay" data-header-overlay></div>
                     </div><!-- .header-warp-->
                 </div><!-- .container-->
             </div><!-- .header-main-->
@@ -181,7 +189,7 @@
         <section class="blog-section section-space">
             <div class="container">
                 <div class="blog-single-page-wrap">
-                    <div class="row">
+                    <div class="row gy-5 gy-lg-0">
                         <div class="col-lg-4">
                             <div class="sidebar">
                                 <div class="sidebar-item">
@@ -312,7 +320,7 @@
                                     </div>
                                     <p>There are many variations of passages agency we have covered many special events such as fireworks, fairs, parades, races, walks, a Lorem Ipsum Fasts injecte dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we’ll help you to create a product that is laser targeted to your users’ needs and business results </p>
                                     <p> There are many variations of passages agency we have covered many special events such as fireworks, fairs, parades, races, walks, a Lorem Ipsum . </p>
-                                    <div class="row">
+                                    <div class="row gy-4 gy-lg-0">
                                         <div class="col-lg-6">
                                             <div class="service-card">
                                                 <div class="service-card-head">
@@ -376,8 +384,10 @@
                                                     <p class="comment-desc"> Lorem ipsum is simply free textdolor sit amet, consectetur notted adipisicing elit sed do iusmod tempor incididu. </p>
                                                     <div class="comment-meta-wrap">
                                                         <span class="comment-meta">November 16, 2018 at 4:31 am</span>
-                                                        <a class="btn-link comment-replay-btn" href="#">
-                                                            <em class="icon ni ni-reply-fill"></em> Reply </a>
+                                                        <div>
+                                                            <a class="btn-link comment-replay-btn" href="#">
+                                                                <em class="icon ni ni-reply-fill"></em> Reply </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -392,8 +402,10 @@
                                                             <p class="comment-desc"> Lorem ipsum is simply free textdolor sit amet, consectetur notted adipisicing elit sed do iusmod tempor incididu. </p>
                                                             <div class="comment-meta-wrap">
                                                                 <span class="comment-meta">November 16, 2018 at 4:31 am</span>
-                                                                <a class="btn-link comment-replay-btn" href="#">
-                                                                    <em class="icon ni ni-reply-fill"></em> Reply </a>
+                                                                <div>
+                                                                    <a class="btn-link comment-replay-btn" href="#">
+                                                                        <em class="icon ni ni-reply-fill"></em> Reply </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -410,8 +422,10 @@
                                                     <p class="comment-desc"> Lorem ipsum is simply free textdolor sit amet, consectetur notted adipisicing elit sed do iusmod tempor incididu. </p>
                                                     <div class="comment-meta-wrap">
                                                         <span class="comment-meta">November 16, 2018 at 4:31 am</span>
-                                                        <a class="btn-link comment-replay-btn" href="#">
-                                                            <em class="icon ni ni-reply-fill"></em> Reply </a>
+                                                        <div>
+                                                            <a class="btn-link comment-replay-btn" href="#">
+                                                                <em class="icon ni ni-reply-fill"></em> Reply </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -462,7 +476,7 @@
             <div class="footer-shape"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <div class="footer-info footer-info-2">
                             <div class="footer-logo">
                                 <a href="index.html">
@@ -504,7 +518,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Service</h4>
                             <ul class="list-item list-item-white">
@@ -516,7 +530,7 @@
                             </ul>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Quick Link</h4>
                             <ul class="list-item list-item-white">
@@ -528,7 +542,7 @@
                             </ul>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Recent Posts</h4>
                             <div class="post-media-wrap">
@@ -562,7 +576,7 @@
         </footer><!-- end footer-section -->
         <div class="copyright-section bg-dark copyright-section-white">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="copyright-left">
                         <p>Copyright © <span id="get-full-year"></span> <a href="index.html">Buildex</a>, All Rights Reserved.</p>
                     </div>

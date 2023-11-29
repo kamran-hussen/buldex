@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
     <div class="page-wrap">
         <div class="search-popup">
             <span class="search-overlay" data-search-overlay-selector></span>
@@ -96,7 +99,10 @@
                                 <img class="logo-img" src="images/logo.png" alt="logo">
                             </a>
                         </div><!-- .header-logo -->
-                        <nav class="header-menu">
+                        <nav class="header-menu" data-header-menu>
+                            <div class="header-menu-close" data-header-menu-close>
+                                <em class="icon ni ni-cross"></em>
+                            </div>
                             <ul class="menu-list">
                                 <li class="menu-item has-sub">
                                     <a href="#" class="menu-link menu-toggle">Home</a>
@@ -106,9 +112,6 @@
                                             <li class="menu-item"><a href="home-2.html" class="menu-link">Home Page 02</a></li>
                                         </ul>
                                     </div>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="about.html" class="menu-link">About</a>
                                 </li>
                                 <li class="menu-item has-sub">
                                     <a href="#" class="menu-link menu-toggle">Service</a>
@@ -123,6 +126,7 @@
                                     <a href="#" class="menu-link menu-toggle">Pages</a>
                                     <div class="menu-sub">
                                         <ul class="menu-list">
+                                            <li class="menu-item"><a href="about.html" class="menu-link">About</a></li>
                                             <li class="menu-item"><a href="team.html" class="menu-link">Team</a></li>
                                             <li class="menu-item"><a href="team-details.html" class="menu-link">Team Details</a></li>
                                             <li class="menu-item"><a href="portfolio.html" class="menu-link">Portfolio</a></li>
@@ -161,6 +165,10 @@
                                 </ul>
                             </div>
                         </nav><!-- .header-menu -->
+                        <div class="header-menu-bar" data-header-menu-bar>
+                            <em class="icon ni ni-menu"></em>
+                        </div>
+                        <div class="header-overlay" data-header-overlay></div>
                     </div><!-- .header-warp-->
                 </div><!-- .container-->
             </div><!-- .header-main-->
@@ -182,7 +190,7 @@
             <div class="container">
                 <div class="section-content-header">
                     <div class="row align-items-end">
-                        <div class="col-lg-6">
+                        <div class="col-xl-6">
                             <div class="section-content">
                                 <div class="section-sub-title">
                                     <em class="icon ni ni-chevron-right-circle-fill"></em> our best projects
@@ -190,7 +198,7 @@
                                 <h1 class="section-title">Our Work Recent Projects</h1>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-xl-6">
                             <div class="portfolio-content">
                                 <div class="section-content pb-4">
                                     <p class="section-text"> Our approach has been simple. Provide 100% competitive price sing qualified Building with no hidden fees ked by </p>
@@ -302,7 +310,7 @@
             <div class="footer-shape"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <div class="footer-info footer-info-2">
                             <div class="footer-logo">
                                 <a href="index.html">
@@ -344,7 +352,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Service</h4>
                             <ul class="list-item list-item-white">
@@ -356,7 +364,7 @@
                             </ul>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Quick Link</h4>
                             <ul class="list-item list-item-white">
@@ -368,7 +376,7 @@
                             </ul>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Recent Posts</h4>
                             <div class="post-media-wrap">
@@ -402,7 +410,7 @@
         </footer><!-- end footer-section -->
         <div class="copyright-section bg-dark copyright-section-white">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="copyright-left">
                         <p>Copyright © <span id="get-full-year"></span> <a href="index.html">Buildex</a>, All Rights Reserved.</p>
                     </div>

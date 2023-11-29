@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
     <div class="page-wrap home-page-2">
         <div class="search-popup">
             <span class="search-overlay" data-search-overlay-selector></span>
@@ -49,7 +52,10 @@
                                 <img class="logo-img" src="images/logo.png" alt="logo">
                             </a>
                         </div><!-- .header-logo -->
-                        <nav class="header-menu">
+                        <nav class="header-menu" data-header-menu>
+                            <div class="header-menu-close" data-header-menu-close>
+                                <em class="icon ni ni-cross"></em>
+                            </div>
                             <ul class="menu-list">
                                 <li class="menu-item has-sub">
                                     <a href="#" class="menu-link menu-toggle">Home</a>
@@ -59,9 +65,6 @@
                                             <li class="menu-item"><a href="home-2.html" class="menu-link">Home Page 02</a></li>
                                         </ul>
                                     </div>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="about.html" class="menu-link">About</a>
                                 </li>
                                 <li class="menu-item has-sub">
                                     <a href="#" class="menu-link menu-toggle">Service</a>
@@ -76,6 +79,7 @@
                                     <a href="#" class="menu-link menu-toggle">Pages</a>
                                     <div class="menu-sub">
                                         <ul class="menu-list">
+                                            <li class="menu-item"><a href="about.html" class="menu-link">About</a></li>
                                             <li class="menu-item"><a href="team.html" class="menu-link">Team</a></li>
                                             <li class="menu-item"><a href="team-details.html" class="menu-link">Team Details</a></li>
                                             <li class="menu-item"><a href="portfolio.html" class="menu-link">Portfolio</a></li>
@@ -114,6 +118,10 @@
                                 </ul>
                             </div>
                         </nav><!-- .header-menu -->
+                        <div class="header-menu-bar" data-header-menu-bar>
+                            <em class="icon ni ni-menu"></em>
+                        </div>
+                        <div class="header-overlay" data-header-overlay></div>
                     </div><!-- .header-warp-->
                 </div><!-- .container-->
             </div><!-- .header-main-->
@@ -121,15 +129,15 @@
         <section class="hero-section-2 has-bg">
             <div class="container">
                 <div class="row justify-content-end gx-0">
-                    <div class="col-md-6">
+                    <div class="col-md-8 col-xl-6">
                         <div class="hero-content-2-wrap">
                             <div class="owl-carousel owl-theme" data-breakpoints='{
                                     "0": {"items": 1}
                                 }' data-loop="true" data-dot="true">
                                 <div class="hero-slide-item">
                                     <div class="hero-feature-wrap mb-5">
-                                        <div class="row">
-                                            <div class="col-md-4">
+                                        <div class="row gy-4 gy-md-0">
+                                            <div class="col-8 col-sm-6 col-md-4">
                                                 <div class="feature-card-2">
                                                     <div class="feature-card-2-icon">
                                                         <img src="images/icon/feature-icon-1.svg" alt="">
@@ -140,7 +148,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- .col -->
-                                            <div class="col-md-4">
+                                            <div class="col-8 col-sm-6 col-md-4">
                                                 <div class="feature-card-2">
                                                     <div class="feature-card-2-icon">
                                                         <img src="images/icon/feature-icon-2.svg" alt="">
@@ -151,7 +159,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- .col -->
-                                            <div class="col-md-4">
+                                            <div class="col-8 col-sm-6 col-md-4">
                                                 <div class="feature-card-2">
                                                     <div class="feature-card-2-icon">
                                                         <img src="images/icon/feature-icon-3.svg" alt="">
@@ -179,8 +187,8 @@
                                 </div><!-- .hero-slide-item -->
                                 <div class="hero-slide-item">
                                     <div class="hero-feature-wrap mb-5">
-                                        <div class="row">
-                                            <div class="col-md-4">
+                                        <div class="row gy-4 gy-md-0">
+                                            <div class="col-8 col-sm-6 col-md-4">
                                                 <div class="feature-card-2">
                                                     <div class="feature-card-2-icon">
                                                         <img src="images/icon/feature-icon-1.svg" alt="">
@@ -191,7 +199,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- .col -->
-                                            <div class="col-md-4">
+                                            <div class="col-8 col-sm-6 col-md-4">
                                                 <div class="feature-card-2">
                                                     <div class="feature-card-2-icon">
                                                         <img src="images/icon/feature-icon-2.svg" alt="">
@@ -202,7 +210,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- .col -->
-                                            <div class="col-md-4">
+                                            <div class="col-8 col-sm-6 col-md-4">
                                                 <div class="feature-card-2">
                                                     <div class="feature-card-2-icon">
                                                         <img src="images/icon/feature-icon-3.svg" alt="">
@@ -236,7 +244,7 @@
         </section>
         <section class="about-section-2 section-space">
             <div class="container">
-                <div class="row">
+                <div class="row gy-5 gy-md-0">
                     <div class="col-lg-5">
                         <div class="section-content-wrap">
                             <div class="section-content">
@@ -246,7 +254,7 @@
                                 <h1 class="section-title">Bulding Revolution For This About Save Faciluty. </h1>
                                 <p class="section-text">Our approach has been simple. Provide 100% competitive price sing qualified plumbers with no hidden fees ked by a 100% guarantee on workmanship Provide. </p>
                                 <p class="section-text">Our approach has been simple. Provide 100% competitive price sing qualified plumbers with no hidden fees ked by a 100% guarantee on workmanship Provide. </p>
-                                <div class="row my-4 py-2">
+                                <div class="row my-4 py-2 gy-3 gy-sm-0">
                                     <div class="col-sm-6 col-lg-4">
                                         <img src="images/thumb/about-img-3.png" class="h-100" alt="">
                                     </div>
@@ -259,8 +267,8 @@
                                     </div>
                                 </div>
                                 <div class="divider has-line"></div>
-                                <div class="row align-items-center my-4 py-3">
-                                    <div class="col-lg-8">
+                                <div class="row align-items-center my-4 py-3 gy-3 gy-sm-0">
+                                    <div class="col-sm-8">
                                         <div class="media align-items-start">
                                             <div class="media-head">
                                                 <div class="js-knob-wrap">
@@ -273,15 +281,15 @@
                                             </div>
                                         </div>
                                     </div><!-- .col -->
-                                    <div class="col-lg-4">
+                                    <div class="col-sm-4">
                                         <div>
                                             <img src="images/thumb/machine.jpg" alt="">
                                         </div>
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                                 <div class="divider has-line is-right"></div>
-                                <div class="row align-items-center gx-0 mt-4 pt-3">
-                                    <div class="col-lg-8">
+                                <div class="row align-items-center gx-0 mt-4 pt-3 gy-3 gy-sm-0">
+                                    <div class="col-sm-8">
                                         <div class="media">
                                             <div class="media-head">
                                                 <div class="icon-element medium primary circle">
@@ -293,7 +301,7 @@
                                             </div>
                                         </div>
                                     </div><!-- .col -->
-                                    <div class="col-lg-4">
+                                    <div class="col-sm-4">
                                         <div>
                                             <img src="images/shape/sign.png" alt="">
                                         </div>
@@ -303,7 +311,7 @@
                         </div>
                     </div><!-- .col -->
                     <div class="col-lg-7">
-                        <div class="section-img-wrap about-img-wrap-2 ps-5">
+                        <div class="section-img-wrap about-img-wrap-2 ps-md-5">
                             <img src="images/thumb/about-img-2.png" alt="">
                         </div>
                     </div><!-- .col -->
@@ -313,8 +321,8 @@
         <section class="funfact-section section-space-bottom">
             <div class="container">
                 <div class="counter-wrap counter-wrap-2">
-                    <div class="row">
-                        <div class="col-lg-2">
+                    <div class="row gy-5 gy-xl-0">
+                        <div class="col-sm-6 col-md-3 col-xl-2">
                             <div class="counter-card">
                                 <div class="counter-icon">
                                     <img src="images/icon/counter-icon-1.png" alt="">
@@ -327,7 +335,7 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-lg-2">
+                        <div class="col-sm-6 col-md-3 col-xl-2">
                             <div class="counter-card">
                                 <div class="counter-icon">
                                     <img src="images/icon/counter-icon-2.png" alt="">
@@ -340,7 +348,7 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-lg-2">
+                        <div class="col-sm-6 col-md-3 col-xl-2">
                             <div class="counter-card">
                                 <div class="counter-icon">
                                     <img src="images/icon/counter-icon-3.png" alt="">
@@ -353,7 +361,7 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-lg-2">
+                        <div class="col-sm-6 col-md-3 col-xl-2">
                             <div class="counter-card">
                                 <div class="counter-icon">
                                     <img src="images/icon/counter-icon-4.png" alt="">
@@ -366,7 +374,7 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-lg-2">
+                        <div class="col-sm-6 col-md-3 col-xl-2">
                             <div class="counter-card">
                                 <div class="counter-icon">
                                     <img src="images/icon/counter-icon-5.png" alt="">
@@ -379,7 +387,7 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-lg-2">
+                        <div class="col-sm-6 col-md-3 col-xl-2">
                             <div class="counter-card">
                                 <div class="counter-icon">
                                     <img src="images/icon/counter-icon-5.png" alt="">
@@ -405,7 +413,7 @@
                     <h1 class="section-title">We Are Quality General Service</h1>
                 </div>
                 <div class="row gy-4">
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="service-card service-card-2">
                             <div class="service-card-head">
                                 <h4 class="title">
@@ -431,7 +439,7 @@
                             </div>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="service-card service-card-2">
                             <div class="service-card-head">
                                 <h4 class="title">
@@ -457,7 +465,7 @@
                             </div>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="service-card service-card-2">
                             <div class="service-card-head">
                                 <h4 class="title">
@@ -485,7 +493,7 @@
                     </div><!-- .col -->
                 </div><!-- .row -->
                 <div class="service-note-wrap pt-5">
-                    <div class="row justify-content-between align-items-center ">
+                    <div class="row justify-content-between align-items-center gy-3 gy-sm-0">
                         <div class="col-sm-6 col-lg-4">
                             <div class="service-note">
                                 <p>
@@ -493,7 +501,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 text-end">
+                        <div class="col-sm-6 col-lg-4 text-sm-end">
                             <ul class="button-group">
                                 <li>
                                     <a href="#" class="btn btn-primary btn-pill btn-with-icon-element"> View All Service <span class="icon-element circle">
@@ -732,7 +740,7 @@
                 <div class="team-slider-wrap">
                     <div class="owl-carousel owl-theme" data-breakpoints='{
                             "0": {"items": 1},
-                            "600": {"items": 3},
+                            "600": {"items": 2},
                             "1000": {"items": 4}
                          }' data-loop="true" data-dot="true">
                         <div class="team-card-2">
@@ -957,8 +965,8 @@
                     </div>
                     <h1 class="section-title">High Quality Easy Work Steps</h1>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="working-card working-card-2">
                             <div class="working-card-inner">
                                 <span class="working-card-bg"></span>
@@ -977,7 +985,7 @@
                             </div>
                         </div><!-- .working-card -->
                     </div><!-- .col -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="working-card working-card-2">
                             <div class="working-card-inner">
                                 <span class="working-card-bg"></span>
@@ -1001,7 +1009,7 @@
                             </div>
                         </div><!-- .working-card -->
                     </div><!-- .col -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="working-card working-card-2">
                             <div class="working-card-inner">
                                 <span class="working-card-bg"></span>
@@ -1051,7 +1059,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-lg-5">
                 <div class="shop-slider-wrap">
                     <div class="owl-carousel owl-theme" data-breakpoints='{
                             "0": {"items": 1},
@@ -1173,8 +1181,8 @@
         </section>
         <section class="cta-section section-space-bottom is-dark">
             <div class="cta-wrap">
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row gy-4 gy-md-0">
+                    <div class="col-sm-6 col-md-4">
                         <div class="cta-content">
                             <div class="media">
                                 <div class="media-head">
@@ -1189,7 +1197,7 @@
                             </div>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="cta-content">
                             <div class="media">
                                 <div class="media-head">
@@ -1204,7 +1212,7 @@
                             </div>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="cta-content">
                             <div class="media">
                                 <div class="media-head">
@@ -1230,8 +1238,8 @@
                     </div>
                     <h1 class="section-title">We Going Largest Our Blog</h1>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="blog-card blog-card-2">
                             <div class="blog-card-inner">
                                 <div class="blog-card-head">
@@ -1277,7 +1285,7 @@
                             </div>
                         </div><!-- .blog-card -->
                     </div><!-- .col -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="blog-card blog-card-2">
                             <div class="blog-card-inner">
                                 <div class="blog-card-head">
@@ -1323,7 +1331,7 @@
                             </div>
                         </div><!-- .blog-card -->
                     </div><!-- .col -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="blog-card blog-card-2">
                             <div class="blog-card-inner">
                                 <div class="blog-card-head">
@@ -1382,7 +1390,7 @@
             <div class="footer-shape"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <div class="footer-info footer-info-2">
                             <div class="footer-logo">
                                 <a href="index.html">
@@ -1424,7 +1432,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Service</h4>
                             <ul class="list-item list-item-white">
@@ -1436,7 +1444,7 @@
                             </ul>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Quick Link</h4>
                             <ul class="list-item list-item-white">
@@ -1448,7 +1456,7 @@
                             </ul>
                         </div>
                     </div><!-- .col -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <div class="footer-item footer-item-2 footer-item-white">
                             <h4 class="footer-title">Recent Posts</h4>
                             <div class="post-media-wrap">
@@ -1482,7 +1490,7 @@
         </footer><!-- end footer-section -->
         <div class="copyright-section bg-dark copyright-section-white">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="copyright-left">
                         <p>Copyright © <span id="get-full-year"></span> <a href="index.html">Buildex</a>, All Rights Reserved.</p>
                     </div>
